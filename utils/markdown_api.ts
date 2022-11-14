@@ -3,7 +3,7 @@ import { micromark } from "micromark";
 import { gfm, gfmHtml } from "micromark-extension-gfm";
 import {frontmatter, frontmatterHtml} from 'micromark-extension-frontmatter'
 
-const getPosts = cache(async () => {
+const getPosts = async () => {
     const res = await fetch(process.env.GITHUB_ENDPOINT, {
       headers: {
         Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
@@ -11,7 +11,7 @@ const getPosts = cache(async () => {
     });
     console.log(res.json);
     return res.json();
-});
+};
 
 const getPost = async (slug: any) => {
     const posts = await getPosts();
