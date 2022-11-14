@@ -7,8 +7,9 @@ body {
   background-color: #101010;
   color: #ececec;
   display: flex;
-  justify-content: center;
   width: 100%;
+  flex-direction: column;
+  align-items: center;
 }
 
 a {
@@ -22,6 +23,7 @@ a {
 
 article {
   max-width: 900px;
+  width: 100%;
 }
 
 table {
@@ -48,6 +50,7 @@ table thead {
 pre {
   padding: 1rem;
   border-radius: 15px;
+  overflow-x: scroll;
   background-color: #151515;
 }
 
@@ -57,4 +60,13 @@ code {
 
 h1, h2, h3, h4, h5, h6 {
   color: #28C264;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  padding: 1rem;
 }

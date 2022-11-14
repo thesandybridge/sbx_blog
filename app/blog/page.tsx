@@ -1,5 +1,4 @@
 import { getPosts, getPost, getMarkdown } from "./inc/markdown_api";
-import "../../styles/globals.css";
 import Link from "next/link";
 
 export default async function Page() {
@@ -8,11 +7,12 @@ export default async function Page() {
   return (
     <>
       {posts.map((post: any) => {
+        let title = post.name.replace(/\.[^/.]+$/, "");
         return (
           <>
             <article>
-              <Link href={`/blog/${post.name.replace(/\.[^/.]+$/, "")}`}>
-                <h2>{post.name.replace(/\.[^/.]+$/, "")}</h2>
+              <Link href={`/blog/${title}`} title={title}>
+                <h2>{title}</h2>
               </Link>
             </article>
           </>

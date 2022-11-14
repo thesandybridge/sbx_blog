@@ -1,5 +1,4 @@
 import { getPosts, getPost, getMarkdown } from "../inc/markdown_api";
-import "../../../styles/globals.css";
 
 export default async function Page({ params }) {
   const content = await getMarkdown(params.slug);
