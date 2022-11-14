@@ -1,10 +1,17 @@
-import Script from "next/script";
+import { getPosts, getPost, getMarkdown } from "../inc/markdown_api";
 
-export default function Head() {
+export default async function Head({ params }) {
   return (
     <>
-      <title></title>
-      <meta content="width=device-width, initial-scale=1" name="viewport" />
+      <title>{`thesbx | Blog: ${params.slug}`}</title>
     </>
   );
+}
+
+export async function generateStaticParams() {
+  const posts = await getPosts();
+
+  return posts.map((post: any) => ({
+    slug: post.name.replace(/\.[^/.]+$/, ""),
+  }));
 }
