@@ -4,7 +4,7 @@ export default async function Page({ params }) {
   const content = await getMarkdown(params.slug);
   return (
     <>
-      <article dangerouslySetInnerHTML={{ __html: content }} />
+      <div dangerouslySetInnerHTML={{ __html: content }} />
     </>
   );
 }
