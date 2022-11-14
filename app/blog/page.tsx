@@ -10,11 +10,11 @@ export default async function Page() {
         let title = post.name.replace(/\.[^/.]+$/, "");
         return (
           <>
-            <article>
+            <div>
               <Link href={`/blog/${title}`} title={title}>
                 <h2>{title}</h2>
               </Link>
-            </article>
+            </div>
           </>
         );
       })}
