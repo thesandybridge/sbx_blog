@@ -5,6 +5,7 @@
     "@types/prismjs": "^1.26.0",
     "eslint-config-next": "latest",
     "micromark": "^3.1.0",
+    "micromark-extension-frontmatter": "^1.0.0",
     "micromark-extension-gfm-autolink-literal": "^1.0.3",
     "next": "latest",
     "prismjs": "^1.29.0",

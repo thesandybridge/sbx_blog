@@ -1,7 +1,23 @@
-export default function Page() {
+import { getPosts, getPost, getMarkdown } from "./inc/markdown_api";
+import "../../styles/globals.css";
+import Link from "next/link";
+
+export default async function Page() {
+  const posts = await getPosts();
+
   return (
-    <div>
-      <h1>Blog</h1>
-    </div>
+    <>
+      {posts.map((post: any) => {
+        return (
+          <>
+            <article>
+              <Link href={`/blog/${post.name.replace(/\.[^/.]+$/, "")}`}>
+                <h2>{post.name.replace(/\.[^/.]+$/, "")}</h2>
+              </Link>
+            </article>
+          </>
+        );
+      })}
+    </>
   );
 }

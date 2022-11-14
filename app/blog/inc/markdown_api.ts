@@ -1,6 +1,7 @@
 import { cache } from "react";
 import { micromark } from "micromark";
 import { gfm, gfmHtml } from "micromark-extension-gfm";
+import {frontmatter, frontmatterHtml} from 'micromark-extension-frontmatter'
 
 const getPosts = cache(async () => {
     const res = await fetch(process.env.GITHUB_ENDPOINT, {
@@ -27,7 +28,7 @@ const markdownToHtml = async(markdown: string) => {
 }
 
 const getMarkdown = async (slug: any) => {
-  const post = await getPost(slug);
+  const post = await getPost(`${slug}.md`);
   const res = await fetch(post.download_url);
   const markdown = await markdownToHtml(await res.text());
   return markdown;
