@@ -2,7 +2,8 @@
  * @type {import('next').NextConfig}
  */
  const nextConfig = {
-  experimental: {appDir: true}
+  experimental: {appDir: true},
+  pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
 }
 
 module.exports = nextConfig
