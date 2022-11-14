@@ -1,4 +1,4 @@
-import { getPosts, getPost, getMarkdown } from "../../utils/markdown_api";
+import { getPosts } from "../../utils/markdown_api";
 import Link from "next/link";
 
 export default async function Page() {

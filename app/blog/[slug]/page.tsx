@@ -1,7 +1,7 @@
-import { getPosts, getPost, getMarkdown } from "../../../utils/markdown_api";
+import { getPosts, getMarkdownByPost } from "../../../utils/markdown_api";
 
 export default async function Page({ params }) {
-  const content = await getMarkdown(params.slug);
+  const content = await getMarkdownByPost(params.slug);
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: content }} />
