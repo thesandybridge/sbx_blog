@@ -12,7 +12,7 @@ export default async function Page() {
           <>
             <div>
               <Link href={`/blog/${title}`} title={title}>
-                <h2>{title}</h2>
+                <h2 className="blog-headline">{title}</h2>
               </Link>
             </div>
           </>
