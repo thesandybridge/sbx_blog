@@ -64,6 +64,12 @@ table thead {
   /* font-size: clamp(1rem, 2.5vw, 2rem);  */
 }
 
+@media screen and (max-width: 691px) {
+  .banner {
+    font-size: 4px;
+  }
+}
+
 pre:not(.banner) {
   position: relative;
   padding: 2rem;
