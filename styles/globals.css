@@ -62,9 +62,27 @@ pre:hover > button {
 
 button {
   position: absolute;
+  background-color: #151515;
+  border: solid 1px #7A8D81;
+  color: #ececec;
+  border-radius: 10px;
+  padding: 10px;
   display: none;
   top: 10px;
   right: 10px;
+  cursor: pointer;
+}
+
+button.copied {
+  border-color: #28C264;
+}
+
+.button-copy {
+  fill: #7A8D81;
+}
+
+.button-checked {
+  fill: #28C264;
 }
 
 code {
