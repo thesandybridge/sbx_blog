@@ -9,7 +9,6 @@ const getPosts = async () => {
         Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
       },
     });
-    console.log(res.json);
     return res.json();
 };
 
