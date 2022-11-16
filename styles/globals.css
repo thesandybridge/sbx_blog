@@ -133,6 +133,10 @@ footer {
   flex-wrap: wrap;
 }
 
+.code-logos svg {
+  width: 30px;
+}
+
 .code-logos .dark {
   filter: invert(1);
 }
