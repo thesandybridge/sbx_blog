@@ -3,6 +3,7 @@
  */
  const nextConfig = {
   experimental: {appDir: true},
+  reactStrictMode: false,
   pageExtensions: ['mdx', 'md', 'jsx', 'js', 'tsx', 'ts'],
 }
 

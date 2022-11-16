@@ -40,6 +40,7 @@ export default function Post({ content }) {
   useEffect(() => {
     enableCopy();
   }, [ref]);
+
   return (
     <>
       <div dangerouslySetInnerHTML={{ __html: content }} />

@@ -49,10 +49,22 @@ table thead {
 }
 
 pre {
+  position: relative;
   padding: 1rem;
   border-radius: 15px;
   overflow-x: scroll;
   background-color: #151515;
+}
+
+pre:hover > button {
+  display: block;
+}
+
+button {
+  position: absolute;
+  display: none;
+  top: 10px;
+  right: 10px;
 }
 
 code {
