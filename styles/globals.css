@@ -33,16 +33,22 @@ a {
 
 article.main {
   height: 100%;
+  max-width: 900px;
+  width: 100%;
+  padding: 1rem;
+}
+
+article.post-archive {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-headline {
+  display: inline-block;
 }
 
 .blog-headline:hover {
   color: var(--blue);
-}
-
-article {
-  max-width: 900px;
-  width: 100%;
-  padding: 1rem;
 }
 
 table {
