@@ -115,8 +115,8 @@ export default function DevIcons() {
       <svg className="dark" viewBox="0 0 128 128">
         <g fill="#181616">
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M64 5.103c-33.347 0-60.388 27.035-60.388 60.388 0 26.682 17.303 49.317 41.297 57.303 3.017.56 4.125-1.31 4.125-2.905 0-1.44-.056-6.197-.082-11.243-16.8 3.653-20.345-7.125-20.345-7.125-2.747-6.98-6.705-8.836-6.705-8.836-5.48-3.748.413-3.67.413-3.67 6.063.425 9.257 6.223 9.257 6.223 5.386 9.23 14.127 6.562 17.573 5.02.542-3.903 2.107-6.568 3.834-8.076-13.413-1.525-27.514-6.704-27.514-29.843 0-6.593 2.36-11.98 6.223-16.21-.628-1.52-2.695-7.662.584-15.98 0 0 5.07-1.623 16.61 6.19C53.7 35 58.867 34.327 64 34.304c5.13.023 10.3.694 15.127 2.033 11.526-7.813 16.59-6.19 16.59-6.19 3.287 8.317 1.22 14.46.593 15.98 3.872 4.23 6.215 9.617 6.215 16.21 0 23.194-14.127 28.3-27.574 29.796 2.167 1.874 4.097 5.55 4.097 11.183 0 8.08-.07 14.583-.07 16.572 0 1.607 1.088 3.49 4.148 2.897 23.98-7.994 41.263-30.622 41.263-57.294C124.388 32.14 97.35 5.104 64 5.104z"
           ></path>
           <path d="M26.484 91.806c-.133.3-.605.39-1.035.185-.44-.196-.685-.605-.543-.906.13-.31.603-.395 1.04-.188.44.197.69.61.537.91zm2.446 2.729c-.287.267-.85.143-1.232-.28-.396-.42-.47-.983-.177-1.254.298-.266.844-.14 1.24.28.394.426.472.984.17 1.255zM31.312 98.012c-.37.258-.976.017-1.35-.52-.37-.538-.37-1.183.01-1.44.373-.258.97-.025 1.35.507.368.545.368 1.19-.01 1.452zm3.261 3.361c-.33.365-1.036.267-1.552-.23-.527-.487-.674-1.18-.343-1.544.336-.366 1.045-.264 1.564.23.527.486.686 1.18.333 1.543zm4.5 1.951c-.147.473-.825.688-1.51.486-.683-.207-1.13-.76-.99-1.238.14-.477.823-.7 1.512-.485.683.206 1.13.756.988 1.237zm4.943.361c.017.498-.563.91-1.28.92-.723.017-1.308-.387-1.315-.877 0-.503.568-.91 1.29-.924.717-.013 1.306.387 1.306.88zm4.598-.782c.086.485-.413.984-1.126 1.117-.7.13-1.35-.172-1.44-.653-.086-.498.422-.997 1.122-1.126.714-.123 1.354.17 1.444.663zm0 0"></path>
@@ -131,8 +131,8 @@ export default function DevIcons() {
           gradientTransform="matrix(.7 0 0 .35 782.303 444.575)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-opacity=".502"></stop>
-          <stop offset="1" stop-opacity="0"></stop>
+          <stop offset="0" stopOpacity=".502"></stop>
+          <stop offset="1" stopOpacity="0"></stop>
         </radialGradient>
         <path
           fill="url(#linux-original-a)"
@@ -146,8 +146,8 @@ export default function DevIcons() {
           gradientTransform="matrix(.719 0 0 .35 595.327 443.952)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-opacity=".502"></stop>
-          <stop offset="1" stop-opacity="0"></stop>
+          <stop offset="0" stopOpacity=".502"></stop>
+          <stop offset="1" stopOpacity="0"></stop>
         </radialGradient>
         <path
           fill="url(#linux-original-b)"
@@ -2875,9 +2875,9 @@ export default function DevIcons() {
             y2="-130.856"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#FAC700"></stop>
-            <stop offset=".415" stop-color="#F7C400"></stop>
-            <stop offset="1" stop-color="#F7C400"></stop>
+            <stop offset="0" stopColor="#FAC700"></stop>
+            <stop offset=".415" stopColor="#F7C400"></stop>
+            <stop offset="1" stopColor="#F7C400"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-c)"
@@ -2892,9 +2892,9 @@ export default function DevIcons() {
             y2="-130.857"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#F6C200"></stop>
-            <stop offset=".415" stop-color="#EFBC00"></stop>
-            <stop offset="1" stop-color="#EFBC00"></stop>
+            <stop offset="0" stopColor="#F6C200"></stop>
+            <stop offset=".415" stopColor="#EFBC00"></stop>
+            <stop offset="1" stopColor="#EFBC00"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-d)"
@@ -2909,9 +2909,9 @@ export default function DevIcons() {
             y2="-130.859"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#F1BD00"></stop>
-            <stop offset=".415" stop-color="#E8B500"></stop>
-            <stop offset="1" stop-color="#E8B500"></stop>
+            <stop offset="0" stopColor="#F1BD00"></stop>
+            <stop offset=".415" stopColor="#E8B500"></stop>
+            <stop offset="1" stopColor="#E8B500"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-e)"
@@ -2926,9 +2926,9 @@ export default function DevIcons() {
             y2="-130.86"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#EDB800"></stop>
-            <stop offset=".415" stop-color="#E0AD00"></stop>
-            <stop offset="1" stop-color="#E0AD00"></stop>
+            <stop offset="0" stopColor="#EDB800"></stop>
+            <stop offset=".415" stopColor="#E0AD00"></stop>
+            <stop offset="1" stopColor="#E0AD00"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-f)"
@@ -2943,9 +2943,9 @@ export default function DevIcons() {
             y2="-130.862"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#E9B300"></stop>
-            <stop offset=".415" stop-color="#D8A500"></stop>
-            <stop offset="1" stop-color="#D8A500"></stop>
+            <stop offset="0" stopColor="#E9B300"></stop>
+            <stop offset=".415" stopColor="#D8A500"></stop>
+            <stop offset="1" stopColor="#D8A500"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-g)"
@@ -2960,9 +2960,9 @@ export default function DevIcons() {
             y2="-130.863"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#E4AE00"></stop>
-            <stop offset=".415" stop-color="#D19E00"></stop>
-            <stop offset="1" stop-color="#D19E00"></stop>
+            <stop offset="0" stopColor="#E4AE00"></stop>
+            <stop offset=".415" stopColor="#D19E00"></stop>
+            <stop offset="1" stopColor="#D19E00"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-h)"
@@ -2977,9 +2977,9 @@ export default function DevIcons() {
             y2="-130.864"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#E0A900"></stop>
-            <stop offset=".415" stop-color="#C99600"></stop>
-            <stop offset="1" stop-color="#C99600"></stop>
+            <stop offset="0" stopColor="#E0A900"></stop>
+            <stop offset=".415" stopColor="#C99600"></stop>
+            <stop offset="1" stopColor="#C99600"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-i)"
@@ -2994,9 +2994,9 @@ export default function DevIcons() {
             y2="-130.866"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#DCA400"></stop>
-            <stop offset=".415" stop-color="#C18E00"></stop>
-            <stop offset="1" stop-color="#C18E00"></stop>
+            <stop offset="0" stopColor="#DCA400"></stop>
+            <stop offset=".415" stopColor="#C18E00"></stop>
+            <stop offset="1" stopColor="#C18E00"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-j)"
@@ -3011,9 +3011,9 @@ export default function DevIcons() {
             y2="-130.866"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#D79F00"></stop>
-            <stop offset=".415" stop-color="#BA8700"></stop>
-            <stop offset="1" stop-color="#BA8700"></stop>
+            <stop offset="0" stopColor="#D79F00"></stop>
+            <stop offset=".415" stopColor="#BA8700"></stop>
+            <stop offset="1" stopColor="#BA8700"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-k)"
@@ -3028,9 +3028,9 @@ export default function DevIcons() {
             y2="-130.867"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#D39B00"></stop>
-            <stop offset=".415" stop-color="#B27F00"></stop>
-            <stop offset="1" stop-color="#B27F00"></stop>
+            <stop offset="0" stopColor="#D39B00"></stop>
+            <stop offset=".415" stopColor="#B27F00"></stop>
+            <stop offset="1" stopColor="#B27F00"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-l)"
@@ -3045,9 +3045,9 @@ export default function DevIcons() {
             y2="-130.868"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#CF9600"></stop>
-            <stop offset=".415" stop-color="#a70"></stop>
-            <stop offset="1" stop-color="#a70"></stop>
+            <stop offset="0" stopColor="#CF9600"></stop>
+            <stop offset=".415" stopColor="#a70"></stop>
+            <stop offset="1" stopColor="#a70"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-m)"
@@ -3062,9 +3062,9 @@ export default function DevIcons() {
             y2="-130.869"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#CA9100"></stop>
-            <stop offset=".415" stop-color="#A37000"></stop>
-            <stop offset="1" stop-color="#A37000"></stop>
+            <stop offset="0" stopColor="#CA9100"></stop>
+            <stop offset=".415" stopColor="#A37000"></stop>
+            <stop offset="1" stopColor="#A37000"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-n)"
@@ -3079,9 +3079,9 @@ export default function DevIcons() {
             y2="-130.869"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#C68C00"></stop>
-            <stop offset=".415" stop-color="#9B6800"></stop>
-            <stop offset="1" stop-color="#9B6800"></stop>
+            <stop offset="0" stopColor="#C68C00"></stop>
+            <stop offset=".415" stopColor="#9B6800"></stop>
+            <stop offset="1" stopColor="#9B6800"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-o)"
@@ -3096,9 +3096,9 @@ export default function DevIcons() {
             y2="-130.87"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#C28700"></stop>
-            <stop offset=".415" stop-color="#936000"></stop>
-            <stop offset="1" stop-color="#936000"></stop>
+            <stop offset="0" stopColor="#C28700"></stop>
+            <stop offset=".415" stopColor="#936000"></stop>
+            <stop offset="1" stopColor="#936000"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-p)"
@@ -3113,9 +3113,9 @@ export default function DevIcons() {
             y2="-130.871"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#BD8200"></stop>
-            <stop offset=".415" stop-color="#8C5900"></stop>
-            <stop offset="1" stop-color="#8C5900"></stop>
+            <stop offset="0" stopColor="#BD8200"></stop>
+            <stop offset=".415" stopColor="#8C5900"></stop>
+            <stop offset="1" stopColor="#8C5900"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-q)"
@@ -3130,9 +3130,9 @@ export default function DevIcons() {
             y2="-130.871"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#B97D00"></stop>
-            <stop offset=".415" stop-color="#845100"></stop>
-            <stop offset="1" stop-color="#845100"></stop>
+            <stop offset="0" stopColor="#B97D00"></stop>
+            <stop offset=".415" stopColor="#845100"></stop>
+            <stop offset="1" stopColor="#845100"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-r)"
@@ -3147,9 +3147,9 @@ export default function DevIcons() {
             y2="-130.872"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#B57800"></stop>
-            <stop offset=".415" stop-color="#7C4900"></stop>
-            <stop offset="1" stop-color="#7C4900"></stop>
+            <stop offset="0" stopColor="#B57800"></stop>
+            <stop offset=".415" stopColor="#7C4900"></stop>
+            <stop offset="1" stopColor="#7C4900"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-s)"
@@ -3164,9 +3164,9 @@ export default function DevIcons() {
             y2="-130.872"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#B07300"></stop>
-            <stop offset=".415" stop-color="#754200"></stop>
-            <stop offset="1" stop-color="#754200"></stop>
+            <stop offset="0" stopColor="#B07300"></stop>
+            <stop offset=".415" stopColor="#754200"></stop>
+            <stop offset="1" stopColor="#754200"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-t)"
@@ -3181,9 +3181,9 @@ export default function DevIcons() {
             y2="-130.872"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#AC6E00"></stop>
-            <stop offset=".415" stop-color="#6D3A00"></stop>
-            <stop offset="1" stop-color="#6D3A00"></stop>
+            <stop offset="0" stopColor="#AC6E00"></stop>
+            <stop offset=".415" stopColor="#6D3A00"></stop>
+            <stop offset="1" stopColor="#6D3A00"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-u)"
@@ -3198,9 +3198,9 @@ export default function DevIcons() {
             y2="-130.873"
             gradientTransform="translate(375.489 179.416) scale(1.234)"
           >
-            <stop offset="0" stop-color="#A86A00"></stop>
-            <stop offset=".415" stop-color="#663200"></stop>
-            <stop offset="1" stop-color="#663200"></stop>
+            <stop offset="0" stopColor="#A86A00"></stop>
+            <stop offset=".415" stopColor="#663200"></stop>
+            <stop offset="1" stopColor="#663200"></stop>
           </linearGradient>
           <path
             fill="url(#linux-original-v)"
@@ -3281,8 +3281,8 @@ export default function DevIcons() {
           y2="1151.089"
           gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
         >
-          <stop offset="0" stop-color="#5A9FD4"></stop>
-          <stop offset="1" stop-color="#306998"></stop>
+          <stop offset="0" stopColor="#5A9FD4"></stop>
+          <stop offset="1" stopColor="#306998"></stop>
         </linearGradient>
         <linearGradient
           id="python-original-b"
@@ -3293,8 +3293,8 @@ export default function DevIcons() {
           y2="1149.537"
           gradientTransform="matrix(.563 0 0 -.568 -29.215 707.817)"
         >
-          <stop offset="0" stop-color="#FFD43B"></stop>
-          <stop offset="1" stop-color="#FFE873"></stop>
+          <stop offset="0" stopColor="#FFD43B"></stop>
+          <stop offset="1" stopColor="#FFE873"></stop>
         </linearGradient>
         <path
           fill="url(#python-original-a)"
@@ -3314,8 +3314,8 @@ export default function DevIcons() {
           gradientTransform="matrix(0 -.24 -1.055 0 532.979 557.576)"
           gradientUnits="userSpaceOnUse"
         >
-          <stop offset="0" stop-color="#B8B8B8" stop-opacity=".498"></stop>
-          <stop offset="1" stop-color="#7F7F7F" stop-opacity="0"></stop>
+          <stop offset="0" stopColor="#B8B8B8" stopOpacity=".498"></stop>
+          <stop offset="1" stopColor="#7F7F7F" stopOpacity="0"></stop>
         </radialGradient>
         <path
           opacity=".444"

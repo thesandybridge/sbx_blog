@@ -1,11 +1,20 @@
+:root { 
+  --dark-green: #7A8D81;
+  --light-green: #28C264;
+  --black: #101010;
+  --black-2: #151515;
+  --blue: #28c2bf;
+  --white: #ececec;
+}
+
 html,
 body {
   padding: 1rem;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #101010;
-  color: #7A8D81;
+  background-color: var(--black);
+  color: var(--dark-green);
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -27,7 +36,7 @@ article.main {
 }
 
 .blog-headline:hover {
-  color: #28c2bf;
+  color: var(--blue);
 }
 
 article {
@@ -38,23 +47,23 @@ article {
 
 table {
   width: 100%;
-  background-color: #101010;
+  background-color: var(--black);
   border-collapse: collapse;
   border-width: 2px;
-  border-color: #151515;
+  border-color: var(--black-2);
   border-style: solid;
-  color: #ececec;
+  color: var(--white);
 }
 
 table, th, td {
   border-width: 2px;
-  border-color: #151515;
+  border-color: var(--black-2);
   border-style: solid;
   padding: 5px;
 }
 
 table thead {
-  background-color: #151515;
+  background-color: var(--black-2);
 }
 
 .banner {
@@ -74,7 +83,7 @@ pre:not(.banner) {
   padding: 2rem;
   border-radius: 15px;
   overflow-x: scroll;
-  background-color: #151515;
+  background-color: var(--black-2);
 }
 
 pre:hover > button {
@@ -83,9 +92,9 @@ pre:hover > button {
 
 button {
   position: absolute;
-  background-color: #151515;
-  border: solid 1px #7A8D81;
-  color: #ececec;
+  background-color: var(--black-2);
+  border: solid 1px var(--dark-green);
+  color: var(--white);
   border-radius: 10px;
   padding: 10px;
   display: none;
@@ -95,23 +104,23 @@ button {
 }
 
 button.copied {
-  border-color: #28C264;
+  border-color: var(--light-green);
 }
 
 .button-copy {
-  fill: #7A8D81;
+  fill: var(--dark-green);
 }
 
 .button-checked {
-  fill: #28C264;
+  fill: var(--light-green);
 }
 
 code {
-  color: #7A8D81;
+  color: var(--dark-green);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #28C264;
+  color: var(--light-green);
 }
 
 nav {
@@ -147,7 +156,7 @@ footer {
 }
 
 .code-logos svg:hover {
-  filter: drop-shadow(0px 0px 3px #28C264);
+  filter: drop-shadow(0px 0px 3px var(--light-green));
 }
 
 .home-banner {

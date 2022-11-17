@@ -1,4 +1,4 @@
-import Nav from "./blog/nav";
+import Nav from "./nav";
 import Footer from "./footer";
 import "../styles/globals.css";
 
