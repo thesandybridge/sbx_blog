@@ -132,6 +132,11 @@ nav {
   padding: 1rem;
 }
 
+.utility-nav {
+  display: flex;
+  gap: 10px;
+}
+
 nav svg {
   width: 25px;
 }
