@@ -1,6 +1,6 @@
 export default function DevIcons() {
   return (
-    <>
+    <div className="dev-icons">
       <svg viewBox="0 0 128 128">
         <path fill="#fff" d="M22.67 47h99.67v73.67H22.67z"></path>
         <path
@@ -3354,6 +3354,6 @@ export default function DevIcons() {
           fill="#c51850"
         ></path>
       </svg>
-    </>
+    </div>
   );
 }

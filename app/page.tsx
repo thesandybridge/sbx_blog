@@ -7,6 +7,7 @@ export default function Home() {
       <Banner />
       <code>[Full Stack Developer]</code>
       <section className="code-logos">
+        <h3>🧰 Languages and Tools</h3>
         <DevIcons />
       </section>
     </div>

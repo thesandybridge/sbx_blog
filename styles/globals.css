@@ -132,6 +132,14 @@ nav {
   padding: 1rem;
 }
 
+nav svg {
+  width: 25px;
+}
+
+nav svg:hover path {
+  fill: var(--light-green);
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -140,22 +148,25 @@ footer {
 }
 
 .code-logos {
+  padding: 1rem;
+}
+
+.dev-icons {
   display: flex;
   gap: 10px;
   justify-content: center;
-  padding: 1rem;
   flex-wrap: wrap;
 }
 
-.code-logos svg {
+.dev-icons svg {
   width: 30px;
 }
 
-.code-logos .dark {
+.dev-icons .dark {
   filter: invert(1);
 }
 
-.code-logos svg:hover {
+.dev-icons svg:hover {
   filter: drop-shadow(0px 0px 3px var(--light-green));
 }
 
