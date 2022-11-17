@@ -1,4 +1,5 @@
 "use client";
+// This is a Client Component, I am adding the copy button dynamically to the API response from the markdown.
 import { useEffect, useRef } from "react";
 
 const svgCopy =

@@ -1,5 +1,5 @@
-import Banner from "./banner";
-import DevIcons from "./devicons";
+import Banner from "./components/banner";
+import DevIcons from "./components/devicons";
 
 export default function Home() {
   return (
