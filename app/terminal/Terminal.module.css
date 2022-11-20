@@ -6,4 +6,31 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 900px;
+    width: 100%;
+    min-height: 400px;
+    transform: translateY(50%);
+    padding: 1.5rem;
+    background-color: var(--black);
+}
+
+.interface {
+    position: absolute;
+    left: -100vw;
+}
+
+.commandLine::before {
+    font-family: cursor, monospace;
+    color: #519975;
+    content: "visitor@mattmiller.com:~$";
+    margin-right: 10px;
+}
+
+.cursor {
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
 }
