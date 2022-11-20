@@ -194,3 +194,11 @@ footer {
 .home-banner {
   text-align: center;
 }
+
+.modal.display-block {
+  display: flex;
+}
+
+.modal.display-none {
+  display: none;
+}

@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import styles from "./Terminal.module.css";
 import { commands } from "utils/terminal_commands";
 
-export default function Terminal() {
+export default function Page() {
   const cliInterface = useRef(null);
 
   const [cli, setCli] = useState("");
@@ -19,7 +19,7 @@ export default function Terminal() {
 
   return (
     <>
-      <div className={styles.terminal}>
+      <div className={styles.terminal} onClick={handleFocus}>
         <textarea
           ref={cliInterface}
           autoFocus
@@ -35,7 +35,7 @@ export default function Terminal() {
             }
           }}
         />
-        <div className={styles.commandLine} onClick={handleFocus}>
+        <div className={styles.commandLine}>
           <span className={styles.prompt}>{cli}</span>
           <b className={styles.cursor}>█</b>
           {command.length > 0 &&

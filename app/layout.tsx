@@ -1,7 +1,6 @@
 import Nav from "./components/nav";
 import Footer from "./footer";
 import "../styles/globals.css";
-import Terminal from "./terminal/terminal";
 
 export default function RootLayout({
   children,
@@ -14,7 +13,6 @@ export default function RootLayout({
       <body>
         <Nav />
         <article className="main">{children}</article>
-        <Terminal />
         <Footer />
       </body>
     </html>
