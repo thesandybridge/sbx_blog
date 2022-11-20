@@ -145,6 +145,7 @@ nav a {
 
 nav .terminal-button {
   width: 30px;
+  cursor: pointer;
 }
 
 .utility-nav {
