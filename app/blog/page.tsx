@@ -19,7 +19,7 @@ const Page = async () => {
       </p>
       <article className="post-archive">
         {posts.map((post: any) => {
-          let title = post.name.replace(/\.[^/.]+$/, "");
+          let title = post.name;
           return (
             <>
               <Link href={`/blog/${title}`} title={title}>
