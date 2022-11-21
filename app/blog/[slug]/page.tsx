@@ -10,6 +10,6 @@ export async function generateStaticParams() {
   const posts = await getPosts();
 
   return posts.map((post: any) => ({
-    slug: post.name,
+    slug: post.name.replace(/\.[^/.]+$/, ""),
   }));
 }
