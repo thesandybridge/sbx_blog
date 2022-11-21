@@ -43,4 +43,4 @@ const getMarkdown = async () => {
   return payload;
 }
 
-export {getPosts, getPost, getMarkdownByPost, getMarkdown, markdownToHtml}
+export {getPosts, getPost, getMarkdownByPost, getMarkdown}
