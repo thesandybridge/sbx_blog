@@ -1,4 +1,4 @@
-import { getPosts, getPost, getMarkdown } from "../../../utils/markdown_api";
+import { getPosts, getPost, getMarkdown } from "../../utils/markdown_api";
 
 export default async function Head({ params }) {
   return (

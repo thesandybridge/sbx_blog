@@ -1,4 +1,4 @@
-import { getPosts } from "../../utils/markdown_api";
+import { getPosts } from "../utils/markdown_api";
 import Link from "next/link";
 
 const Page = async () => {

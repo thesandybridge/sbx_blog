@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from 'next'
-import { getPosts } from '../../../utils/markdown_api'
+import { getPosts } from '../../../app/utils/markdown_api'
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
 
