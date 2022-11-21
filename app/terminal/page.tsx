@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef } from "react";
 import styles from "./Terminal.module.css";
-import { commands } from "app/utils/terminal_commands";
+import { commands } from "utils/terminal_commands";
 
 export default function Page() {
   const cliInterface = useRef(null);
