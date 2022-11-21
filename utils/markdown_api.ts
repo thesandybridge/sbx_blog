@@ -26,9 +26,11 @@ const getPosts = async () => {
 };
 
 const getPost = async (slug: string) => {
-    const posts = await getPosts();
-    const post: Post = posts.find((post: Post) => post.name === slug);
-    return post;
+    const post = await getPosts()
+    .then((response) => {
+      return response.find((post: Post) => post.name === slug);
+    })
+    return post
 }
 
 const markdownToHtml = async(markdown: string) => {
@@ -40,10 +42,13 @@ const markdownToHtml = async(markdown: string) => {
 }
 
 const getMarkdownByPost = async (slug: string) => {
-  const post = getPost(`${slug}.md`);
-  const res = await fetch((await post).download_url);
-  const markdown = await markdownToHtml(await res.text())
-  return markdown
+  const post = await getPost(`${slug}.md`)
+  .then(async (post: Post) => {
+    const res = await fetch(post.download_url);
+    const markdown = await markdownToHtml(await res.text())
+    return markdown;
+  })
+  return post;
 }
 
 const getMarkdown = async () => {
