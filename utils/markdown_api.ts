@@ -25,7 +25,7 @@ const getPosts = async () => {
     return res.json();
 };
 
-const getPostDownloadURL = async (slug: string) => {
+const getPost = async (slug: string) => {
     const post = await getPosts()
     .then((response) => {
       return response.find((post: Post) => post.name === slug);
@@ -42,16 +42,10 @@ const markdownToHtml = async(markdown: string) => {
 }
 
 const getMarkdownByPost = async (slug: string) => {
-  const posts = await getPosts();
-  const payload = await Promise.all(posts.map(async (post: Post) => {
-    if (post.name === `${slug}.md`) {
-      const res = await fetch(post.download_url);
-      const markdown = await markdownToHtml(await res.text())
-      return markdown;
-    }
-    return null
-  }));
-  return payload;
+  const post = await getPost(`${slug}.md`);
+  const payload = await fetch(post?.download_url);
+  const markdown = await markdownToHtml(await payload.text())
+  return markdown;
 }
 
 const getMarkdown = async () => {
