@@ -39,6 +39,18 @@ const markdownToHtml = async(markdown: string) => {
   return result;
 }
 
+const getMarkdownByPost = async (slug: string) => {
+  const posts = await getPosts();
+  const payload = await Promise.all(posts.map(async (post: Post) => {
+    if (post.name === `${slug}.md`) {
+      const res = await fetch(post.download_url);
+      const markdown = await markdownToHtml(await res.text())
+      return markdown;
+    }
+  }));
+  return payload;
+}
+
 const getMarkdown = async () => {
   const posts = await getPosts();
   const payload = await Promise.all(posts.map(async (post: Post) => {
@@ -49,4 +61,4 @@ const getMarkdown = async () => {
   return payload;
 }
 
-export {getPosts, getPost, getMarkdown}
+export {getPosts, getPost, getMarkdownByPost, getMarkdown}
