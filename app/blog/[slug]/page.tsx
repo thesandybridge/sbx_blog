@@ -1,8 +1,8 @@
-import { getPosts, getMarkdownByPost } from "../../../utils/markdown_api";
+import { getPosts, getMarkdown } from "../../../utils/markdown_api";
 import Post from "./post";
 
-export default async function Page({ params }) {
-  const content = await getMarkdownByPost(params.slug);
+export default async function Page() {
+  const content = await getMarkdown();
   return (
     <>
       <Post content={content} />

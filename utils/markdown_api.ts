@@ -39,21 +39,14 @@ const markdownToHtml = async(markdown: string) => {
   return result;
 }
 
-const getMarkdownByPost = async (slug: string) => {
-  const post = await getPost(`${slug}.md`);
-  const res = await fetch(post.download_url);
-  const markdown = await markdownToHtml(await res.text());
-  return markdown;
-}
-
 const getMarkdown = async () => {
   const posts = await getPosts();
   const payload = await Promise.all(posts.map(async (post: Post) => {
     const res = await fetch(post.download_url);
-    const markdown = await res.text()
+    const markdown = await markdownToHtml(await res.text())
     return markdown;
   }));
   return payload;
 }
 
-export {getPosts, getPost, getMarkdownByPost, getMarkdown}
+export {getPosts, getPost, getMarkdown}
