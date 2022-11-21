@@ -42,10 +42,13 @@ const markdownToHtml = async(markdown: string) => {
 }
 
 const getMarkdownByPost = async (slug: string) => {
-  const post = await getPost(`${slug}.md`);
-  const payload = await fetch(post.download_url);
-  const markdown = await markdownToHtml(await payload.text())
-  return markdown;
+  const payload = await getPost(`${slug}.md`)
+  .then(async (post: Post) => {
+    const res = await fetch(post.download_url)
+    const markdown = await markdownToHtml(await res.text())
+    return markdown
+  })
+  return payload;
 }
 
 const getMarkdown = async () => {
