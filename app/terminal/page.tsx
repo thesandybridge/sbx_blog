@@ -30,7 +30,6 @@ export default function Page() {
             if (e.key === "Enter") {
               e.preventDefault();
               const c = commands(cli);
-              console.log(c);
               setCommand(c);
             }
           }}
