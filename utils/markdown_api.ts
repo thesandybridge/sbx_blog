@@ -26,11 +26,12 @@ const getPosts = async () => {
 };
 
 const getPost = async (slug: string) => {
-    const post = await getPosts()
-    .then((response) => {
-      return response.find((post: Post) => post.name === slug);
-    })
-    return post
+  const res = await fetch(`${process.env.GITHUB_ENDPOINT}/${slug}.md`, {
+    headers: {
+      Authorization: `bearer ${process.env.GITHUB_TOKEN}`,
+    },
+  });
+  return res.json();
 }
 
 const markdownToHtml = async(markdown: string) => {
@@ -42,8 +43,9 @@ const markdownToHtml = async(markdown: string) => {
 }
 
 const getMarkdownByPost = async (slug: string) => {
-  const payload = await getPost(`${slug}.md`)
+  const payload = await getPost(slug)
   .then(async (post: Post) => {
+    console.log(post)
     const res = await fetch(post.download_url)
     const markdown = await markdownToHtml(await res.text())
     return markdown
