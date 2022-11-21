@@ -30,8 +30,7 @@ const getPostDownloadURL = async (slug: string) => {
     .then((response) => {
       return response.find((post: Post) => post.name === slug);
     })
-    const res = await fetch(post.download_url);
-    return res
+    return post
 }
 
 const markdownToHtml = async(markdown: string) => {
@@ -43,12 +42,16 @@ const markdownToHtml = async(markdown: string) => {
 }
 
 const getMarkdownByPost = async (slug: string) => {
-  const post = await getPostDownloadURL(`${slug}.md`)
-  .then(async (response) => {
-    const markdown = markdownToHtml(await response.text()) 
-    return markdown
-  })
-  return post;
+  const posts = await getPosts();
+  const payload = await Promise.all(posts.map(async (post: Post) => {
+    if (post.name === `${slug}.md`) {
+      const res = await fetch(post.download_url);
+      const markdown = await markdownToHtml(await res.text())
+      return markdown;
+    }
+    return null
+  }));
+  return payload;
 }
 
 const getMarkdown = async () => {
