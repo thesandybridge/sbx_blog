@@ -6,10 +6,3 @@ export default async function Page({ params }) {
   return <Post content={content} />;
 }
 
-// export async function generateStaticParams() {
-//   const posts = await getPosts();
-
-//   return posts.map((post: any) => ({
-//     slug: post.name.replace(/\.[^/.]+$/, ""),
-//   }));
-// }
