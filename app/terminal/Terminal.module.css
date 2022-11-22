@@ -19,7 +19,7 @@
 .commandLine::before {
     font-family: cursor, monospace;
     color: #519975;
-    content: "visitor@mattmiller.com:~$";
+    content: "visitor@mattmillerdev.io:~$";
     margin-right: 10px;
 }
 
