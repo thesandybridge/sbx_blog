@@ -33,7 +33,7 @@
     }
 }
 
-@media screen and (max-width: 600) {
+@media screen and (max-width: 600px) {
     .commandLine::before {
         content: "~$";
     }
