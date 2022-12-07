@@ -5,7 +5,7 @@ export default function Banner() {
   useEffect(() => {
     setTimeout(() => {
       setShow(true);
-    }, 10000);
+    }, 6900);
   });
   return (
     <>

@@ -74,7 +74,7 @@ table thead {
 }
 
 .banner {
-  padding: 5rem;
+  padding: 2rem;
   text-align: center;
   color: #59d46d;
   /* font-size: clamp(1rem, 2.5vw, 2rem);  */
@@ -198,11 +198,16 @@ footer {
 
 .animation {
   width: 100%;
-  height: 350px;
-  background-image: url("../public/assets/MMillerDev_TranspBG_1920x350.gif");
+  background-image: url("../public/assets/animation.gif");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+@media and screen and (max-width: 691px) { 
+    .banner-container {
+        height: 200px;
+    }
 }
 
 .banner-container {
