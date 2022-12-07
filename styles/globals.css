@@ -194,3 +194,12 @@ footer {
 .home-banner {
   text-align: center;
 }
+
+.animation {
+  width: 100%;
+  height: 400px;
+  background-image: url("../public/assets/MMillerDev_TranspBG.gif");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
