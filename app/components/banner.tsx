@@ -26,8 +26,7 @@ export default function Banner() {
           //   <br />
           // </pre>
           <svg
-            id="Layer_1"
-            data-name="Layer 1"
+            className="banner"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 1737.55 170.5"
           >

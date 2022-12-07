@@ -74,6 +74,7 @@ table thead {
 }
 
 .banner {
+  padding: 5rem;
   text-align: center;
   color: #59d46d;
   /* font-size: clamp(1rem, 2.5vw, 2rem);  */
