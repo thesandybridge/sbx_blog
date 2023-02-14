@@ -164,13 +164,26 @@ nav svg:hover path {
 
 footer {
   display: flex;
-  flex-direction: column;
   max-width: 800px;
   text-align: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+footer .social-icons {
+    width: 25px;
 }
 
 .code-logos {
   padding: 1rem;
+}
+
+.code-stats {
+    padding: 1rem 5rem;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .dev-icons {

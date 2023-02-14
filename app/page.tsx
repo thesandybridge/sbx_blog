@@ -1,5 +1,6 @@
 import Banner from "./components/banner";
 import DevIcons from "./components/devicons";
+import Stats from "./components/stats" ;
 
 export default function Home() {
   return (
@@ -10,6 +11,9 @@ export default function Home() {
         <section className="code-logos">
           <h3>🧰 Languages and Tools</h3>
           <DevIcons />
+        </section>
+        <section className="code-stats">
+            <Stats />
         </section>
       </div>
     </>
