@@ -194,6 +194,10 @@ footer .social-icons svg {
     height: 100vh;
 }
 
+.bio {
+    text-align: left;
+}
+
 .dev-icons {
   display: flex;
   gap: 10px;
