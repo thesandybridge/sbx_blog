@@ -16,9 +16,6 @@ export default function Nav() {
         <Link href={"/blog"} title="Blog">
           <FontAwesomeIcon icon={faBook} />
         </Link>
-        <Link href={"/terminal"} title="Terminal">
-          <FontAwesomeIcon icon={faTerminal} />
-        </Link>
       </div>
     </nav>
   );
