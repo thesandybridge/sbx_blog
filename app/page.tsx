@@ -9,10 +9,12 @@ export default function Home() {
         <Banner />
         <code>[Full Stack Developer]</code>
         <section className="code-logos">
-          <h3>🧰 Languages and Tools</h3>
-          <DevIcons />
+            <h3>🧰 Languages and Tools</h3>
+            <DevIcons />
         </section>
+        <hr />
         <section className="code-stats">
+            <h3>Language Stats</h3>
             <Stats />
         </section>
       </div>

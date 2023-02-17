@@ -23,6 +23,12 @@ body {
   align-items: center;
 }
 
+hr {
+    border-color: var(--light-green);
+    opacity: 0.1;
+    margin: 3rem 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -171,7 +177,13 @@ footer {
 }
 
 footer .social-icons {
+    display: flex;
+    align-items: center;
     width: 25px;
+}
+
+footer .social-icons svg {
+    width: 100%;
 }
 
 .code-logos {
@@ -181,9 +193,6 @@ footer .social-icons {
 .code-stats {
     padding: 1rem 5rem;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .dev-icons {
@@ -231,4 +240,17 @@ footer .social-icons {
 
 .banner-container svg path {
   fill: var(--light-green);
+}
+
+#film-grain-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    overflow: hidden;
+    background-image: url("../public/assets/texture-grain-film-246213.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: opacity(3%);
+    top: 0;
 }

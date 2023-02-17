@@ -54,10 +54,10 @@ let chartOptions = {
                 },
             },
             grid: {
-                display: false,
+                color: "rgba(40, 194, 100, 0.1)"
             },
             angleLines: {
-                display: false,
+                color: "#3faa6d"
             },
         },
     },

@@ -14,6 +14,7 @@ export default function RootLayout({
         <Nav />
         <article className="main">{children}</article>
         <Footer />
+        <div id="film-grain-overlay"></div>
       </body>
     </html>
   );
