@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer>
-        <p>© Copyright | {new Date().getFullYear()}</p>
+        <p>© Copyright {new Date().getFullYear()}</p>
         <div className="social-icons">
             <a href="https://github.com/thesandybridge/sbx_blog" target="_blank">
                 <svg viewBox="0 0 128 128">
