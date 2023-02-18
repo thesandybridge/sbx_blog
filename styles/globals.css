@@ -207,6 +207,7 @@ footer .social-icons svg {
 
 .dev-icons svg {
   width: 30px;
+  transition: all .25s ease;
 }
 
 .dev-icons .dark {
@@ -215,6 +216,7 @@ footer .social-icons svg {
 
 .dev-icons svg:hover {
   filter: drop-shadow(0px 0px 3px var(--light-green));
+  scale: 1.5;
 }
 
 .home-banner {
