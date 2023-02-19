@@ -1,6 +1,7 @@
 import Nav from "./components/nav";
 import Footer from "./footer";
 import "../styles/globals.css";
+import ThemeToggle from "./components/theme-toggle";
 
 export default function RootLayout({
   children,
@@ -15,6 +16,7 @@ export default function RootLayout({
         <article className="main">{children}</article>
         <Footer />
         <div id="film-grain-overlay"></div>
+        //<ThemeToggle />
       </body>
     </html>
   );

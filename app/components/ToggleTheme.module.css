@@ -1,0 +1,35 @@
+.toggleButton {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    width: 48px;
+    height: 24px;
+    border-radius: 24px;
+    border-style: none;
+    background-color: #e0e0e0;
+    border: 1px solid #1C1C1C;
+    cursor: pointer;
+}
+
+.toggle {
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #1C1C1C;
+    position: absolute;
+    top: 6.9%;
+    left: 5.5%;
+    z-index: 2;
+    transform: translate(0px);
+    transition: all .3s;
+}
+
+.btnLight {
+    background-color: #1C1C1C !important;
+}
+
+.light {
+    transform: translate(22.5px) scale(1.01, 1) !important;
+    animation-iteration-count: 1;
+    background-color: #fff !important;
+}

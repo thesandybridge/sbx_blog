@@ -22,6 +22,7 @@ function enableCopy(
       copyBtn.innerHTML = svgCopy;
       // activeClass acts as flag so we don't add another copy button by  mistake
       copyBtn.classList.add(activeClass);
+      copyBtn.classList.add("copy");
       node.appendChild(copyBtn);
       copyBtn.addEventListener("click", async () => {
         // copy to clipboard

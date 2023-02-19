@@ -9,7 +9,6 @@
 
 html,
 body {
-  padding: 1rem;
   position: relative;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -21,6 +20,11 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+}
+
+body.light {
+    background-color: var(--white);
+    color: var(--black-2); 
 }
 
 hr {
@@ -100,11 +104,11 @@ pre:not(.banner) {
   background-color: var(--black-2);
 }
 
-pre:hover > button {
+pre:hover > button.copy {
   display: block;
 }
 
-button {
+button.copy {
   position: absolute;
   background-color: var(--black-2);
   border: solid 1px var(--dark-green);
