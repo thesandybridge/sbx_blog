@@ -1,4 +1,4 @@
-:root { 
+:root {
   --dark-green: #7A8D81;
   --light-green: #28C264;
   --black: #101010;
@@ -231,7 +231,7 @@ footer .social-icons svg {
   background-position: center;
 }
 
-@media and screen and (max-width: 691px) { 
+@media and screen and (max-width: 691px) {
     .banner-container {
         height: 200px;
     }
@@ -253,9 +253,7 @@ footer .social-icons svg {
     height: 100vh;
     pointer-events: none;
     overflow: hidden;
-    background-image: url("../public/assets/texture-grain-film-246213.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: none;
     filter: opacity(3%);
     top: 0;
 }
